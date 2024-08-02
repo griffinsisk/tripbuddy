@@ -1,0 +1,152 @@
+.recommendation-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  padding-top: 200px; /* Ensure space for TripBuddy logo and speech bubble */
+}
+
+/* Recommendation Form Page Specific Classes */
+.recommendation-trip-buddy-container {
+  position: fixed;
+  top: 10px; /* Adjust this value to position the image vertically */
+  left: 10px; /* Adjust this value to position the image horizontally */
+  text-align: center;
+  z-index: 1001; /* Ensure it stays above other elements */
+}
+
+.recommendation-trip-buddy-logo {
+  width: 150px; /* Adjust the size as needed */
+  border: 2px solid #000; /* Black border for comic book style */
+  box-shadow: 5px 5px #888888; /* Shadow for vintage effect */
+}
+
+.recommendation-speech-bubble {
+  position: absolute;
+  top: 20px; /* Adjust as needed to position vertically relative to TripBuddy */
+  left: 170px; /* Adjust as needed to position horizontally relative to TripBuddy */
+  width: 200px; /* Adjust width as needed */
+  padding: 10px;
+  border: 2px solid black;
+  background: white;
+  border-radius: 10px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 14px;
+  box-shadow: 5px 5px #888888;
+}
+
+.recommendation-speech-bubble:before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: -20px;
+  width: 0;
+  height: 0;
+  border-right: 20px solid black;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.recommendation-speech-bubble:after {
+  content: '';
+  position: absolute;
+  top: 52px;
+  left: -18px;
+  width: 0;
+  height: 0;
+  border-right: 18px solid white;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  transform: translateY(-50%);
+}
+
+.recommendation-form-container {
+  background: #fff;
+  border: 2px solid #000; /* Black border for comic book style */
+  box-shadow: 5px 5px #888888; /* Shadow for vintage effect */
+  padding: 20px;
+  width: 50%; /* Adjust width as needed */
+  height: auto; /* Adjust height as needed */
+  box-sizing: border-box;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin-top: -150px; /* Adjust this value to position the form container */
+  margin-bottom: 50px;
+}
+
+.recommendation-form {
+  padding: 20px;
+  text-align: left;
+}
+
+.recommendation-form h1 {
+  font-size: 32px;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.recommendation-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.recommendation-form .small-text {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #666;
+}
+
+.recommendation-form input[type="text"],
+.recommendation-form input[type="date"],
+.recommendation-form input[type="number"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  box-shadow: 2px 2px #888888;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.recommendation-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: 2px solid black; /* Black border for comic book style */
+  box-shadow: 5px 5px #888888; /* Shadow for vintage effect */
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  transition: background-color 0.3s;
+}
+
+.recommendation-form button:hover {
+  background-color: #0056b3;
+}
+
+.themes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.theme-option {
+  display: flex;
+  align-items: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.theme-option input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Custom Theme Textbox Styling */
+.theme-option input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+  border: 2px solid black;
+  box-shadow: 2px 2px #888888;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+

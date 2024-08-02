@@ -1,0 +1,110 @@
+.itinerary-container {
+  padding: 20px;
+  text-align: left;
+  overflow: auto;
+  position: relative;
+}
+
+.itinerary-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.itinerary-header h1 {
+  font-size: 48px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.itinerary-location {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.itinerary-location h2 {
+  font-size: 36px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.itinerary-location p {
+  font-size: 18px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.itinerary-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.itinerary-day {
+  background: #fff;
+  border: 2px solid #000; /* Black border for comic book style */
+  box-shadow: 5px 5px #888888; /* Shadow for vintage effect */
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.itinerary-day h3 {
+  margin-top: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.itinerary-day p {
+  margin: 10px 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.itinerary-trip-buddy-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: center;
+}
+
+.itinerary-trip-buddy-logo {
+  width: 150px;
+  border: 2px solid #000; /* Black border for comic book style */
+  box-shadow: 5px 5px #888888; /* Shadow for vintage effect */
+}
+
+.itinerary-speech-bubble {
+  position: absolute;
+  top: 20px;
+  left: 170px;
+  width: 200px;
+  padding: 10px;
+  border: 2px solid black;
+  background: white;
+  border-radius: 10px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 14px;
+  box-shadow: 5px 5px #888888;
+}
+
+.itinerary-speech-bubble:before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: -20px;
+  width: 0;
+  height: 0;
+  border-right: 20px solid black;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.itinerary-speech-bubble:after {
+  content: '';
+  position: absolute;
+  top: 52px;
+  left: -18px;
+  width: 0;
+  height: 0;
+  border-right: 18px solid white;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  transform: translateY(-50%);
+}

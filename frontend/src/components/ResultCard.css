@@ -1,0 +1,142 @@
+.result-card-container {
+  padding: 20px;
+  text-align: left;
+  overflow: auto;
+  position: relative;
+  margin-top: 40px; /* Add margin-top to move the container down */
+}
+
+.result-card-container h1 {
+  font-size: 32px;
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.result-card-container .small-text {
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.recommendations-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.recommendation-card {
+  background: #fff;
+  border: 2px solid #000; /* Black border for comic book style */
+  box-shadow: 5px 5px #888888; /* Shadow for vintage effect */
+  padding: 20px;
+  width: calc(50% - 20px); /* Two cards per row with space between */
+  box-sizing: border-box;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin-bottom: 20px;
+}
+
+.recommendation-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.recommendation-card h3 {
+  margin-top: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.recommendation-card p {
+  margin: 10px 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.recommendation-card button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: 2px solid #000; /* Black border for comic book style */
+  box-shadow: 5px 5px #888888; /* Shadow for vintage effect */
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  transition: background-color 0.3s;
+}
+
+.recommendation-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Loading Screen */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.result-trip-buddy-container {
+  position: fixed; /* Changed to fixed positioning */
+  top: 10px; /* Adjust as needed to position vertically */
+  left: 10px; /* Adjust as needed to position horizontally */
+  text-align: center;
+  z-index: 1001; /* Ensure it stays above other elements */
+}
+
+.result-trip-buddy-logo {
+  width: 150px; /* Adjust the size as needed */
+  border: 2px solid #000; /* Black border for comic book style */
+  box-shadow: 5px 5px #888888; /* Shadow for vintage effect */
+}
+
+.result-speech-bubble {
+  position: absolute;
+  top: 20px; /* Adjust as needed to position vertically relative to TripBuddy */
+  left: 170px; /* Adjust as needed to position horizontally relative to TripBuddy */
+  width: 200px; /* Adjust width as needed */
+  padding: 10px;
+  border: 2px solid black;
+  background: white;
+  border-radius: 10px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 14px;
+  box-shadow: 5px 5px #888888;
+}
+
+.result-speech-bubble:before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: -20px;
+  width: 0;
+  height: 0;
+  border-right: 20px solid black;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.result-speech-bubble:after {
+  content: '';
+  position: absolute;
+  top: 52px;
+  left: -18px;
+  width: 0;
+  height: 0;
+  border-right: 18px solid white;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  transform: translateY(-50%);
+}

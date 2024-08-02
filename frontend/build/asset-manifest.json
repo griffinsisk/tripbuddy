@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cb272468.css",
+    "main.js": "/static/js/main.66ae4ad8.js",
+    "static/media/TripBuddy.png": "/static/media/TripBuddy.b40f59578b8dbc2d19f3.png",
+    "index.html": "/index.html",
+    "main.cb272468.css.map": "/static/css/main.cb272468.css.map",
+    "main.66ae4ad8.js.map": "/static/js/main.66ae4ad8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb272468.css",
+    "static/js/main.66ae4ad8.js"
+  ]
+}
