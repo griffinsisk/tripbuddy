@@ -17,7 +17,6 @@ Technologies Used:
 
 
 **Local Setup**
-
  1. Clone Repo:
 
 git clone https://github.com/yourusername/tripbuddy.git
@@ -60,6 +59,9 @@ docker push gcr.io/your-project-id/tripbuddy
 3. Deploy to Google Cloud Run:
 
 gcloud run deploy tripbuddy --image gcr.io/your-project-id/tripbuddy --platform managed --region your-region --allow-unauthenticated
+
+
+Contact: griffinjsisk@gmail.com for querys
 
 
 
